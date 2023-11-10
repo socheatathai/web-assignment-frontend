@@ -1,0 +1,1421 @@
+@import url("https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.btnScroll {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.367);
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10px;
+  bottom: 5px;
+  position: fixed;
+  transition: background-color 0.3s ease;
+}
+.btnScroll:hover {
+  opacity: 0.4;
+}
+/* section custom */
+html {
+  scroll-behavior: smooth;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  padding: 20px 10%;
+  background-color: rgba(0, 0, 0, 0.83);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: 1s;
+}
+
+.logo img {
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.navbar {
+  display: flex;
+}
+
+.textBar {
+  font-size: 18px;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 1s;
+}
+
+.NavA::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #ffc107;
+  margin: auto;
+  display: block;
+}
+.NavA:hover::after {
+  width: 100%;
+}
+
+/*  Home Page  */
+.homePage {
+  background-color: #0b0c22;
+  width: 100%;
+  height: 750px;
+  text-align: center;
+  padding-top: 300px;
+}
+.homePage p {
+  font-size: 50px;
+}
+.boxHome {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 250px;
+}
+.boxTextHome {
+  width: 500px;
+  height: 100px;
+  font-size: medium;
+}
+.UnderHome {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  padding: 20px 20px;
+}
+.underLeft {
+  width: 50%;
+  height: 100%;
+  padding: 70px 35px;
+}
+.underLeft h4,
+h2 {
+  font-weight: normal;
+  padding-top: 20px;
+}
+
+.underRight {
+  width: 50%;
+  height: 100%;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+.HomeImg {
+  width: 400px;
+  height: 400px;
+  padding: 10px 10px;
+}
+.underRight .HomeImg img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.textHome {
+  color: #f2f2f2af;
+  padding: 50px 100px;
+}
+.textHome span {
+  color: #f2f2f289;
+}
+
+.videoSubMain {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+.videoSubMain:hover {
+  opacity: 0.5;
+}
+.iconPlay {
+  padding: 10px 10px;
+  border: 1px #000 solid;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #000000c3;
+}
+.textIconPlayVid h4,
+h6 {
+  padding-left: 10px;
+  padding-top: 4px;
+  color: #000000bb;
+  font-size: medium;
+  font-weight: 400;
+}
+
+/*  About Page */
+
+.About {
+  width: 100%;
+  padding-top: 100px;
+}
+.boxAboutBelow {
+  display: flex;
+  padding: 0px 5px;
+  justify-content: space-around;
+}
+.MainAbout {
+  width: 80%;
+  margin: auto;
+}
+.subBoxBelow {
+  background-color: #f2f2f291;
+  width: 33.33%;
+  height: 250px;
+  padding: 10px 5px;
+}
+.iconAbout {
+  width: 100%;
+  height: 30%;
+  padding: 10px 5px;
+}
+.iconAbout i {
+  font-size: 50px;
+  padding-top: 30px;
+  padding-left: 25px;
+  color: #000000a2;
+}
+.textIconAbout {
+  width: 100%;
+  height: 60%;
+}
+.textIconAbout h1 {
+  padding: 5px 20px;
+  font-size: medium;
+}
+.textIconAbout p {
+  padding: 10px 20px;
+}
+
+/* token Page */
+
+.token {
+  width: 100%;
+  background-color: #0b0c22;
+  padding: 50px 20px;
+  overflow: hidden;
+}
+.belowBoxToken {
+  display: flex;
+  padding-top: 60px;
+  justify-content: center;
+  color: #f0f0f0;
+}
+.boxTokenLeft {
+  margin-right: 5px;
+  width: 40%;
+  height: 500px;
+}
+.boxTokenLeft h3 {
+  font-size: 30px;
+  font-weight: normal;
+}
+.boxTokeRight {
+  width: 35%;
+  height: 500px;
+  padding-left: 20px;
+}
+.boxTokeRight h3 {
+  font-size: 35px;
+  font-weight: normal;
+}
+/* progress bar */
+.progress-bar {
+  width: 100%;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.progress-bar p {
+  padding: 5px 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #ffc107;
+}
+
+.progress-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 20px;
+  color: #fff;
+}
+
+.rowToken {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.colToken {
+  flex: 1;
+  text-align: center;
+}
+
+.colToken h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #f2f2f2;
+}
+
+.colToken span {
+  display: block;
+  font-size: 14px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.countdownToken {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.countdownToken h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.rowCountdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.colCountdown {
+  flex: 1;
+  text-align: center;
+  list-style-type: none;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  font-size: 24px;
+  color: white;
+}
+
+.days_ref,
+.hours_ref,
+.minutes_ref,
+.seconds_ref {
+  font-size: 14px;
+  color: #f2f2f2;
+}
+/* token right */
+
+.countdownRight {
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 350px;
+  padding: 10px 20px;
+}
+
+.countdownRightUl {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.countdownRightUl li {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.countdownRightUl article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-value {
+  font-size: medium;
+  color: #f2f2f2;
+}
+
+.countdown-label {
+  font-size: 14px;
+  color: #888;
+  margin: 5px 0 0;
+}
+
+.countdown-button {
+  font-size: medium;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.countdown-button:hover {
+  background-color: #45a04900;
+}
+
+.countdown-inverse {
+  background-color: #ffc107;
+}
+
+.card-info {
+  margin-top: 20px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-info i {
+  margin: 0 10px;
+}
+
+/*  activity Page */
+
+.activity {
+  width: 100%;
+  padding: 50px 50px;
+}
+/* activity */
+
+.development-section {
+  text-align: center;
+  padding: 50px 50px;
+}
+
+.development-intro {
+  margin-bottom: 30px;
+}
+
+.development-intro h2 {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.development-intro p {
+  font-size: 16px;
+  color: #666;
+}
+
+.development-stats {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.development-stat {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.development-stat i {
+  font-size: 36px;
+  color: #000;
+}
+
+.development-stat .stat-counter {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.development-stat p {
+  font-size: 14px;
+  color: #888;
+  margin: 5px 0 0;
+}
+
+.development-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.358);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.development-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #000;
+}
+
+.development-btn-inverse {
+  background-color: #ffc107;
+}
+
+/* road Map  Page */
+
+.roadMain {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.roadRight {
+  width: 50%;
+  height: 550px;
+}
+.InfoNum {
+  display: flex;
+  padding: 10px 5px;
+  justify-content: flex-start;
+}
+.numCus {
+  margin: 10px 10px;
+}
+.numDep {
+  margin: 10px 10px;
+  padding-left: 100px;
+}
+.roadLeft {
+  width: 50%;
+  height: 550px;
+  background-color: #f2f2f2;
+  padding-left: 75px;
+  padding-top: 120px;
+}
+.textRoadLeft {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.textRoadLeft h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+.road {
+  width: 97%;
+  margin: auto;
+  padding-top: 120px;
+}
+.mapBelow {
+  padding: 10px 10px;
+  padding-left: 50px;
+  font-weight: 400;
+}
+.mapBelow h2 {
+  font-size: 36px;
+  color: #000000bd;
+}
+.mapBelow p {
+  color: #00000050;
+}
+.mapBox {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+.mapCart {
+  width: 25%;
+  padding: 10px 9px;
+  margin: 10px 5px;
+}
+.mapCart span {
+  background-color: #0000009b;
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  padding: 6px 5px;
+  position: relative;
+}
+.mapCart span:before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  height: 2px;
+  top: 40%;
+  width: 30px;
+  background: #0000009b;
+}
+.mapCart h3,
+span {
+  padding: 10px 5px;
+  color: #000000d1;
+}
+
+/* team  Page*/
+
+.team {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.teamMain1 {
+  width: 75%;
+  margin: auto;
+  padding: 50px 10px;
+
+  text-align: center;
+}
+.teamMain1 h2 {
+  color: #000000a5;
+  font-size: 17px;
+  font-weight: bold;
+}
+.textMain1 {
+  text-align: center;
+  padding: 20px 20px;
+}
+.textMain1 h1 {
+  color: #000000a5;
+
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.teamMain1Box {
+  width: 100%;
+  display: flex;
+}
+.teamBoxImg {
+  width: 20%;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.teamBoxImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.textImg p {
+  margin: 0;
+  padding: 10px;
+}
+
+.teamBoxImg:hover .textImg {
+  opacity: 1;
+}
+.panelTeam {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.panelDropDown {
+  width: 45%;
+  height: 100%;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 3px;
+}
+.panelDropDown i {
+  font-size: medium;
+  padding: 5px 10px;
+  color: #00000071;
+}
+.panelDropDown h5 {
+  font-size: medium;
+  padding: 5px 10px;
+  color: #00000071;
+}
+.footerTeam {
+  width: 100%;
+  height: 500px;
+  background-image: url("./images/bg-img.jpg");
+  display: flex;
+  justify-content: space-around;
+}
+.containerTeam {
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.rowTeam {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*   Contact Page */
+
+.mainContactTeam {
+  padding-top: 150px;
+  text-align: center;
+  justify-content: center;
+}
+.mainContactTeam ul li a {
+  font-size: 25px;
+  color: white;
+}
+.mainContactTeam h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.emailTextBox {
+  padding-top: 150px;
+  text-align: start;
+}
+.emailTextBox h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.emailTextBox input {
+  display: inline-block;
+  font-size: medium;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.emailTextBox input[type="email"] {
+  background: #fff;
+  width: 320px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 25px;
+  border-radius: 2px 0 0 2px;
+}
+.emailTextBox input[type="submit"] {
+  position: relative;
+  border-radius: 0 2px 2px 0;
+  width: 150px;
+  height: 50px;
+  left: -5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #ffc107;
+  color: #fff;
+}
+.emailTextBox input[type="email"]:hover {
+  border: 4px rgb(0, 0, 0) solid;
+}
+.emailTextBox input[type="submit"]:hover {
+  background-color: #000000b1;
+}
+
+.socialsTeam {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.socialsTeam li {
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialsTeam li:hover {
+  background-color: #00000088;
+}
+
+.socialsTeam a {
+  color: #333;
+  text-decoration: none;
+}
+.news-letter .borSub {
+  background-color: red;
+}
+
+.news-letter input[type="email"] {
+  position: relative;
+  right: -10px;
+  border: 1px solid #ccc;
+  border-radius: 2px 0 0 2px;
+  width: 50%;
+  height: 50px;
+  padding-left: 30px;
+  font-size: medium;
+}
+
+.news-letter button {
+  font-size: medium;
+  height: 50px;
+  background-color: #7e7f97;
+  color: white;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.news-letter button:hover {
+  background-color: #f2f2f2;
+}
+
+.contact {
+  width: 100%;
+  height: 650px;
+  background-color: #0b0c22;
+}
+.containerContact {
+  width: 80%;
+  text-align: left;
+  margin: auto;
+  color: white;
+  padding-top: 60px;
+  position: relative;
+}
+.containerContact h3 {
+  padding-left: 30px;
+  color: rgba(255, 255, 255, 0.767);
+  font-size: 25px;
+  font-weight: normal;
+}
+.spoContact {
+  display: flex;
+  justify-content: space-around;
+}
+.spoContact img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.spoContact img:hover {
+  opacity: 0.5;
+}
+.feedbackSubmit {
+  width: 100%;
+  height: 300px;
+}
+
+.yourIdText {
+  display: flex;
+  justify-content: space-around;
+}
+.yourIdText input {
+  text-align: center;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  border-radius: 2px;
+  border: none;
+  font-size: medium;
+  background-color: #17182d;
+  color: white;
+}
+.messageText {
+  display: flex;
+  justify-content: center;
+}
+.messageText textarea {
+  width: 99%;
+  height: 100%;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  border-radius: 2px;
+  border: none;
+  font-size: medium;
+  background-color: #17182d;
+  color: white;
+}
+.btnMessage {
+  position: absolute;
+  background-color: #ffc107;
+  right: 8px;
+  padding: 10px 25px;
+  font-size: medium;
+  border: none;
+}
+.footerMain {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 10px;
+  background-color: #0b0c22;
+  color: white;
+}
+.footerMain a {
+  text-decoration: none;
+  color: white;
+}
+/*Medium devices ( tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar .textBar {
+    font-size: small;
+  }
+  .header .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .homePage .textHome p {
+    font-size: 25px;
+  }
+  .homePage .textHome span {
+    font-size: small;
+  }
+  .UnderHome .underLeft h4 {
+    padding: 0%;
+    font-size: 13px;
+  }
+  .UnderHome .underLeft h2 {
+    padding: 0%;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+  .UnderHome .underLeft span {
+    padding: 0%;
+    padding-top: 70px;
+    font-size: 13px;
+  }
+  .underRight .HomeImg {
+    padding-top: 40px;
+    width: 300px;
+    height: 300px;
+  }
+  .underRight .HomeImg img {
+    object-fit: cover;
+  }
+  .boxAboutBelow .subBoxBelow .iconAbout i {
+    font-size: 30px;
+  }
+  .boxAboutBelow .subBoxBelow h1 {
+    font-size: 13px;
+    font-weight: normal;
+  }
+  .boxAboutBelow .subBoxBelow p {
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  .belowBoxToken .boxTokenLeft h3 {
+    font-size: 25px;
+    font-weight: normal;
+  }
+  .belowBoxToken .boxTokenLeft p {
+    font-size: 15px;
+    font-weight: normal;
+    color: #f3f3f393;
+  }
+  .rowToken .colToken h6 {
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+  }
+  .rowToken .colToken span {
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+  }
+
+  .boxTokeRight .boxTokeRightH3 {
+    font-size: 25px;
+    font-weight: normal;
+    color: white;
+  }
+  .boxTokeRight p {
+    font-size: 12px;
+    font-weight: normal;
+    color: #f3f3f393;
+  }
+  .roadBtn .development-btn {
+    padding: 10px 5px;
+    font-size: small;
+  }
+  .development-section .development-intro h2 {
+    font-size: 25px;
+    font-weight: normal;
+  }
+  .development-section .development-intro p {
+    font-size: 10px;
+    font-weight: normal;
+  }
+  .roadMain .roadLeft .textRoadLeft h1 {
+    font-size: 25px;
+    font-weight: normal;
+  }
+  .roadMain .roadLeft .textRoadLeft p {
+    font-size: 15px;
+    font-weight: normal;
+    padding-right: 10px;
+  }
+  .roadMain .roadLeft {
+    height: 500px;
+  }
+  .roadMain .roadRight {
+    height: 500px;
+  }
+
+  .road .mapBox .mapCart span {
+    margin-left: 10px;
+    font-size: small;
+    font-weight: normal;
+  }
+  .road .mapBox .mapCart h3 {
+    margin-left: 10px;
+    font-size: small;
+    font-weight: normal;
+  }
+  .road .mapBox .mapCart p {
+    margin-left: 10px;
+    font-size: small;
+    padding-left: 5px;
+    font-weight: normal;
+  }
+  .token .belowBoxToken .countdownToken h3 {
+    font-size: medium;
+  }
+
+  .containerTeam .rowTeam .mainContactTeam h2 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .containerTeam .rowTeam .mainContactTeam .socialsTeam li {
+    width: 30px;
+    height: 30px;
+  }
+  .containerTeam .rowTeam .mainContactTeam .socialsTeam li a {
+    font-size: small;
+  }
+  .containerTeam .rowTeam .col .emailTextBox h2 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .containerTeam .rowTeam .col .emailTextBox {
+    padding-right: 80px;
+  }
+
+  .containerTeam .rowTeam .col .emailTextBox input[type="email"] {
+    width: 150px;
+    font-size: small;
+    font-weight: normal;
+  }
+  .containerTeam .rowTeam .col .emailTextBox input[type="submit"] {
+    width: 70px;
+    font-size: small;
+    font-weight: normal;
+  }
+  .containerContact .containerContactH3 {
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .containerContact .spoContact img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+  }
+  .footerMain p {
+    font-size: small;
+    font-weight: normal;
+  }
+
+  /* res mobile */
+  .HomeImgMobile {
+    display: none;
+  }
+}
+/* Small devices ( landscape phones, 576px and up)*/
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .btnScroll {
+    display: none;
+  }
+  .header .navbar {
+    display: none;
+  }
+  .header {
+    padding: 0;
+    height: 80px;
+    transition: 3s;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .header .logo {
+    margin: auto;
+    padding-bottom: 30px;
+  }
+  .homePage {
+    width: 100%;
+    overflow: hidden;
+  }
+  .homePage .textHome p {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .homePage .textHome {
+    padding: 0%;
+  }
+  .homePage .textHome span {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .UnderHome {
+    flex-direction: column;
+  }
+  .UnderHome .underLeft h4,
+  h2 {
+    width: 250px;
+    overflow: hidden;
+  }
+  .UnderHome .underLeft p {
+    width: 300px;
+  }
+  .UnderHome .underRight {
+    width: 50%;
+    height: 100%;
+    padding-right: 200px;
+  }
+  .UnderHome .underRight .HomeImg {
+    width: 250px;
+    height: 250px;
+  }
+  .UnderHome .underRight .HomeImg img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+  }
+
+  .About {
+    background-color: #f2f2f2;
+  }
+  .About .MainAbout .boxAboutBelow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .About .MainAbout .boxAboutBelow .subBoxBelow .textIconAbout {
+    width: 300px;
+  }
+
+  .token .belowBoxToken {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+  }
+  .token .belowBoxToken .boxTokenLeft h3 {
+    width: 300px;
+    font-size: la;
+    font-weight: 500;
+  }
+  .token .belowBoxToken .boxTokenLeft .resTokenP {
+    width: 300px;
+    font-size: medium;
+    font-weight: 500;
+  }
+  .progress-bar {
+    margin-left: 90px;
+    width: 250px;
+  }
+
+  .progress-bar .progress p {
+    color: white;
+    font-size: 15px;
+  }
+
+  .token .belowBoxToken .rowToken .colToken h6 {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.677);
+    width: 100px;
+  }
+  .token .belowBoxToken .rowToken .colToken span {
+    font-size: 10px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.753);
+    width: 100px;
+  }
+
+  .token .belowBoxToken .countdownToken {
+    width: 350px;
+  }
+
+  .token .belowBoxToken .boxTokeRight .boxTokeRightH3 {
+    font-size: medium;
+    width: 350px;
+    padding: 20px 20px;
+  }
+  .token .belowBoxToken .boxTokeRight p {
+    font-size: medium;
+    width: 350px;
+  }
+
+  .boxTokeRight .countdownRight {
+    text-align: center;
+
+    width: 320px;
+  }
+
+  .countdownRightUl {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .countdownRightUl li {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+  }
+
+  .countdownRightUl article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .countdown-value {
+    font-size: medium;
+    color: #f2f2f2;
+  }
+  .countdownRight .countdown-button {
+    margin-top: 50px;
+  }
+  .countdownRightUl .countdown-label {
+    font-size: 14px;
+    color: #888;
+  }
+
+  .activity .development-section .development-intro h2 {
+    font-size: 15px;
+    font-weight: normal;
+    padding-right: 50px;
+  }
+  .activity .development-section .development-intro p {
+    font-size: 10px;
+    font-weight: bold;
+    font-weight: normal;
+  }
+  .activity .development-section .development-stats {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .roadMain {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+  }
+  .roadMain .roadLeft .textRoadLeft h1 {
+    width: 300px;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .roadMain .roadLeft .textRoadLeft p {
+    width: 300px;
+  }
+  .roadMain .roadLeft .textRoadLeft .countInfo .InfoNum h1 {
+    padding-left: 60px;
+  }
+  .roadMain .roadLeft .textRoadLeft .countInfo .InfoNum span {
+    padding-left: 60px;
+  }
+  .roadMain .roadLeft .textRoadLeft .countInfo .InfoNum {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+  }
+  .roadMain .roadLeft .textRoadLeft .countInfo .InfoNum .numDep {
+    padding: 0;
+  }
+  .roadBtn {
+    display: flex;
+    flex-direction: column;
+  }
+  .roadBtn .development-btn {
+    font-size: 10px;
+    width: 150px;
+  }
+  .roadMain .roadRight {
+    width: 100%;
+    height: 350px;
+  }
+  .road .mapBelow h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .roadMain .roadLeft .textRoadLeft .countInfo .InfoNum h1 {
+    padding-left: 0px;
+  }
+  .roadMain .roadLeft .textRoadLeft .countInfo .InfoNum span {
+    padding-left: 0px;
+  }
+  .road .mapBox {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 600px;
+    margin: auto;
+  }
+  .road .mapBox .mapCart {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+  .road .mapBox .mapCart span {
+    text-align: center;
+  }
+  .team .teamMain1 {
+    padding: 0%;
+  }
+
+  .team .teamMain1 .textMain1 h1 {
+    font-size: 20px;
+  }
+
+  .team .teamMain1 .teamMain1Box {
+    flex-direction: column-reverse;
+  }
+  .team .teamMain1 .teamMain1Box .teamBoxImg {
+    width: 320px;
+    height: 320px;
+    margin-top: 1px;
+    border: none;
+    border-radius: 5%;
+  }
+  .team .teamMain1 .teamMain1Box .teamBoxImg img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .team .teamMain1 .teamMain1Box .teamBoxImg .textImg {
+    display: none;
+  }
+  .teamMain1 .panelTeam {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    margin: 30px 5px;
+  }
+
+  .teamMain1 .panelTeam .panelDropDown {
+    width: 200px;
+    width: 300px;
+    margin: 5px 0px;
+  }
+  .footerTeam .containerTeam .rowTeam {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerTeam .containerTeam .rowTeam .mainContactTeam {
+    padding: 0%;
+  }
+  .footerTeam .containerTeam .rowTeam .mainContactTeam h2 {
+    font-size: 25px;
+  }
+  .footerTeam .containerTeam .rowTeam .mainContactTeam .socialsTeam {
+    padding-left: 10px;
+  }
+  .col {
+    padding-top: 50px;
+  }
+  .col .emailTextBox {
+    padding: 0%;
+  }
+  .col .emailTextBox h2 {
+    font-size: 20px;
+  }
+
+  .col .emailTextBox input[type="email"] {
+    background: #fff;
+    width: 235px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    padding-left: 50px;
+    border-radius: 2px 0 0 2px;
+    font-size: small;
+    font-weight: normal;
+  }
+  .col .emailTextBox input[type="submit"] {
+    position: relative;
+    border-radius: 0 2px 2px 0;
+    width: 110px;
+    height: 50px;
+    left: -5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #ffc107;
+    color: #fff;
+    font-size: small;
+    font-weight: normal;
+  }
+  .contact .containerContact .containerContactH3 {
+    font-size: 12px;
+    padding-right: 100px;
+  }
+  .contact .containerContact .spoContact {
+    overflow: hidden;
+  }
+  .contact .containerContact .spoContact img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .containerContact .feedbackSubmit .yourIdText input {
+    font-size: 10px;
+    font-weight: normal;
+  }
+  .btnMessage {
+    font-size: smaller;
+    font-weight: normal;
+  }
+  .footerMain p {
+    font-size: 7px;
+    font-weight: normal;
+  }
+}

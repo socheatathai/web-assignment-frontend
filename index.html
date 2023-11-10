@@ -3,125 +3,696 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Add Bootstrap CSS  & font awesome & google font  --- start  --- -->
+    <link rel="stylesheet" href="/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Sofia"
-    />
-    <!-- Add Bootstrap CSS  & font awesome & google font  --- end  --- -->
-    <!-- Your custom CSS -->
-    <link rel="stylesheet" href="../frontend/index.css" />
-    <link rel="stylesheet" href="./guide-style.css" />
-    <title>web_assignment</title>
+    <title>blockChain</title>
   </head>
   <body>
-    <nav class="mainNav">
-      <div class="container">
-        <div class="navbar">
-          <div>
-            <!-- dropDown -->
-            <div class="custom-dropdown">
-              <button class="custom-btn" id="customDropdownButton">
-                <i class="fa-solid fa-bars dropbtn"></i>
-              </button>
-              <div class="custom-dropdown-content" id="customDropdownContent">
-                <a class="actions" href="#">Home</a>
-                <a href="./pages/discount/discount.html">Discount</a>
-                <a href="./pages/popular/popular.html">Popular</a>
-                <a href="./pages/contact/contact.html">Contact_Us</a>
-              </div>
-            </div>
-            <!-- link  -->
-            <div class="linkNav">
-              <a class="active" href="#">Home</a>
-              <a href="./pages/discount/discount.html">Discount</a>
-              <a href="./pages/popular/popular.html">Popular</a>
-              <a href="./pages/contact/contact.html">Contact_Us</a>
-            </div>
-          </div>
-          <div>
-            <!-- logo -->
-            <div class="logoNav">
-              <img src="./public/Images/m58.png" width="85px" alt="" />
-            </div>
-          </div>
-          <div>
-            <!-- search -->
-            <div class="searchNav">
-              <form class="btnSearch">
-                <input class="search" type="search" placeholder="Search" />
-                <a href="#"
-                  ><img src="./public/Icons/search.png" width="21px" alt=""
-                /></a>
-              </form>
-              <div class="btnShop">
-                <a href="#"
-                  ><img
-                    src="../frontend/public/Icons/Frame 11.png"
-                    width="18px"
-                    alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- header -->
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <img src="./images/logo.png" alt="" />
+        </a>
       </div>
-    </nav>
-    <section>
-      <h1>Home Page</h1>
+      <div class="navbar">
+        <a class="textBar NavA" href="#home">home</a>
+        <a class="textBar NavA" href="#about">About</a>
+        <a class="textBar NavA" href="#token">Token</a>
+        <a class="textBar NavA" href="#activity">Activity</a>
+        <a class="textBar NavA" href="#road">Road_Map</a>
+        <a class="textBar NavA" href="#team">Team</a>
+        <a class="textBar NavA" href="#contact">Contact</a>
+      </div>
+    </header>
+    <!-- Home Page -->
+    <a href="#" class="btnScroll">
+      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+    </a>
+    <section id="home" class="homePage">
+      <div class="textHome">
+        <p>Build a new kind of Decentralized</p>
+        <br />
+        <span
+          >At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          et quas molestias excepturi sint occaecati cupiditate non provident,
+          similique sunt in culpa qui officia deserunt mollitia animi, id est
+          laborum et dolorum fuga.</span
+        >
+      </div>
+      <br />
+      <a class="countdown-button">Join</a>
+      <a class="countdown-button countdown-inverse">VIEW WHITE PAPER</a>
     </section>
-    <!-- FOOTER FEATURE -->
-    <footer>
-      <div class="footerMain">
-        <div class="footerSub">
-          <div class="frame">
-            <img class="brand-logo" src="./public/Images/m58.png" />
-            <div class="div">
-              <div class="div-2">
-                <div class="shop"><div class="text-wrapper">Home</div></div>
-                <div class="popular">
-                  <div class="text-wrapper">Popular</div>
-                </div>
-                <div class="our-product">
-                  <div class="text-wrapper">Discount</div>
-                </div>
-                <div class="contact-us">
-                  <div class="text-wrapper">Contact Us</div>
-                </div>
-              </div>
-              <div class="div-3">
-                <img class="img" src="./public/Icons/fb.png" />
-                <img class="img" src="./public/Icons/insta.png" />
-                <img class="img" src="./public/Icons/p.png" />
-                <img class="img" src="./public/Icons/x.png" />
-                <img class="img" src="./public/Icons/tegram.png" />
-              </div>
+    <main class="UnderHome Test">
+      <div class="underLeft">
+        <h4>
+          The world’s only enterprise blockchain solution for global payments
+        </h4>
+        <h2>Best Blockchain & Better Than Any Blockchain</h2>
+        <br />
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          et quas molestias excepturi sint occaecati cupiditate non provident,
+          similique sunt in culpa qui officia deserunt mollitia animi, id est
+          laborum et dolorum fuga.
+        </p>
+        <br /><br />
+        <a
+          href="https://www.youtube.com/watch?v=7e90gBu4pas"
+          class="videoSubMain"
+        >
+          <div class="iconPlay">
+            <i class="fas fa-play-circle"></i>
+          </div>
+          <div class="textIconPlayVid">
+            <h4 style="font-weight: bold">Watch Video</h4>
+            <h6>How it work</h6>
+          </div>
+        </a>
+      </div>
+      <div class="underRight">
+        <div class="HomeImg">
+          <img src="./images/chain-img.png" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <!-- About page -->
+    <section id="about" class="About">
+      <div class="MainAbout">
+        <div class="boxAboutBelow">
+          <div class="subBoxBelow">
+            <div class="iconAbout">
+              <i class="fa-brands fa-slack fa-2xl"></i>
+            </div>
+            <div class="textIconAbout">
+              <h1>Peer-to-Peer Transactions</h1>
+              <p>
+                Contrary to popular belief , Lorem Ipsum is not simply random
+                text. It has roots in a piece
+              </p>
+            </div>
+          </div>
+          <div class="subBoxBelow">
+            <div class="iconAbout">
+             <i class="fa-solid fa-cart-shopping fa-2xs"></i>
+            </div>
+            <div class="textIconAbout">
+              <h1>Borderless Payments</h1>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem not simply random accusantium
+              </p>
+            </div>
+          </div>
+          <div class="subBoxBelow">
+            <div class="iconAbout">
+              <i class="fa-solid fa-umbrella fa-2xs"></i>
+            </div>
+            <div class="textIconAbout">
+              <h1>Fully Protection</h1>
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="boxAboutBelow">
+          <div class="subBoxBelow">
+            <div class="iconAbout">
+              <i class="fa-regular fa-money-bill-1 fa-2xs"></i>
+            </div>
+            <div class="textIconAbout">
+              <h1>Smart Money</h1>
+              <p>
+                Contrary to popular belief , Lorem Ipsum is not simply random
+                text. It has roots in a piece
+              </p>
+            </div>
+          </div>
+          <div class="subBoxBelow">
+            <div class="iconAbout">
+              <i class="fa-solid fa-wallet fa-2xs"></i>
+            </div>
+            <div class="textIconAbout">
+              <h1>Secure Wallet</h1>
+              <p>
+                Contrary to popular belief , Lorem Ipsum is not simply random
+                text. It has roots in a piece
+              </p>
+            </div>
+          </div>
+          <div class="subBoxBelow">
+            <div class="iconAbout">
+              <i class="fa-brands fa-bitcoin fa-2xs"></i>
+            </div>
+            <div class="textIconAbout">
+              <h1>Easy To buy & Sell</h1>
+              <p>
+                Contrary to popular belief , Lorem Ipsum is not simply random
+                text. It has roots in a piece
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="text-footer">
-        <p class="text-wrapper">
-          Copyright © 2023 StarBuckWeb. All rights reserved.
+    </section>
+    <section id="token" class="token">
+      <div class="belowBoxToken">
+        <div class="boxTokenLeft">
+          <h3>TOKEN Distribution</h3>
+          <br /><br />
+          <div class="resTokenP">
+            <p>
+              ICO Crypto token will be released on the basis of Ethereum and
+              Bitocin platform. It’s compatibility of the token with third-party
+              services wallets, exchanges etc, and provides easy-to-use
+              integration.
+            </p>
+          </div>
+          <br />
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%"><p>9,000</p></div>
+            <div class="progress-text"><p>50%</p></div>
+          </div>
+
+          <br />
+          <div class="rowToken">
+            <div class="colToken">
+              <h6 style="color: white">Now Distribution</h6>
+              <span>2,000,000</span>
+            </div>
+            <div class="colToken">
+              <h6 style="color: white">99,910</h6>
+              <span>ETH Received</span>
+            </div>
+            <div class="colToken">
+              <h6 style="color: white">99,910</h6>
+              <span>BTC Received</span>
+            </div>
+          </div>
+          <!-- countdown -->
+          <div class="countdownToken">
+            <h3>Current Distribution Section End 150/350</h3>
+            <br />
+            <hr />
+            <ul class="rowCountdown">
+              <li class="colCountdown">
+                <article>
+                  <span class="days">00</span>
+                  <p class="days_ref">Days</p>
+                </article>
+              </li>
+              <li class="colCountdown">
+                <article>
+                  <span class="hours">00</span>
+                  <p class="hours_ref">Hours</p>
+                </article>
+              </li>
+              <li class="colCountdown">
+                <article>
+                  <span class="minutes">00</span>
+                  <p class="minutes_ref">Minutes</p>
+                </article>
+              </li>
+              <li class="colCountdown">
+                <article>
+                  <span class="seconds">00</span>
+                  <p class="seconds_ref">Seconds</p>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="boxTokeRight">
+          <h3 class="boxTokeRightH3">
+            Total Distribution Section End <b>350/350</b>
+          </h3>
+          <br /><br />
+          <p>
+            ICO Crypto token wcill be released on the basis of Ethereum and
+            Bitcoin platform.
+          </p>
+          <div class="countdownRight">
+            <ul class="countdownRightUl">
+              <li>
+                <article>
+                  <span class="countdown-value">00</span>
+                  <p class="countdown-label">Days</p>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <span class="countdown-value">00</span>
+                  <p class="countdown-label">Hours</p>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <span class="countdown-value">00</span>
+                  <p class="countdown-label">Minutes</p>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <span class="countdown-value">00</span>
+                  <p class="countdown-label">Seconds</p>
+                </article>
+              </li>
+            </ul>
+            <a href="#." class="countdown-button">Join Us</a>
+            <a href="#." class="countdown-button countdown-inverse">Buy Now</a>
+            <div class="card-info">
+              <i class="fab fa-bitcoin"></i>
+              <i class="fab fa-cc-discover"></i>
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activity -->
+    <section class="activity" id="activity">
+      <div class="development-section">
+        <div class="development-intro">
+          <h2>Development Progress</h2>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            nibh dolor, efficitur eget pharetra ac, cursus sed sapien. Cras
+            posuere ligula ut blandit varius.
+          </p>
+          <br /><br />
+        </div>
+        <ul class="development-stats">
+          <li class="development-stat">
+            <i class="flaticon-rotate"></i>
+            <span><span class="stat-counter">4</span> hrs Ago</span>
+            <p>Last Update</p>
+          </li>
+          <li class="development-stat">
+            <i class="flaticon-building"></i>
+            <span><span class="stat-counter">10</span> Days Ago</span>
+            <p>Last Block Found</p>
+          </li>
+          <li class="development-stat">
+            <i class="flaticon-money-1"></i>
+            <span><span class="stat-counter">45057</span>+</span>
+            <p>Contributions</p>
+          </li>
+          <li class="development-stat">
+            <i class="flaticon-team"></i> <span class="stat-counter">80</span>
+            <p>Team Members</p>
+          </li>
+        </ul>
+        <br />
+        <br />
+        <a href="#." class="development-btn">Start on GitHub</a>
+        <a href="#." class="development-btn development-btn-inverse"
+          >White Paper</a
+        >
+      </div>
+    </section>
+      <!-- second  activity  -->
+    <section>
+      <div class="roadMain">
+        <div class="roadLeft">
+          <div class="textRoadLeft">
+            <h1>Growing Global Network</h1>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              nibh dolor, efficitur eget pharetra ac, sapien. Cras posuere
+              ligula ut blandit varius.
+            </p>
+            <br />
+            <div class="countInfo">
+              <div class="InfoNum">
+                <div class="numCus">
+                  <h1>5000+</h1>
+                  <span>Customer</span>
+                </div>
+                <div class="numDep">
+                  <h1>750+</h1>
+                  <span>deploying</span>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="roadBtn">
+              <a href="#" class="development-btn">WHITE PAPER</a>
+              <a href="#" class="development-btn development-btn-inverse"
+                >FIND AN EXCHANGE</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="roadRight">
+          <img src="./images/road.png" alt="" width="100%" height="100%" />
+        </div>
+      </div>
+    </section>
+    <!-- Road Map -->
+    <section class="road" id="road">
+      <div class="mapBelow">
+        <h2>Our Main Road Map</h2>
+        <br />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita,
+          odio quis. Veritatis, aliquam ad iusto rem doloremque temporibus?
         </p>
       </div>
+      <br /><br />
+      <!-- below Cart -->
+      <div class="mapBox">
+        <!-- road Map Cart -->
+        <div class="mapCart">
+          <span> January 2018 </span>
+
+          <h3>January 2018  Road Map Tittle</h3>
+          <p>1st Prize for Best Illustration Artist</p>
+        </div>
+        <div class="mapCart">
+          <span> February 2018</span>
+          <h3>February Road Map Tittle</h3>
+          <p>1st Prize for Best Illustration Artist</p>
+        </div>
+        <div class="mapCart">
+          <span> March 2018 </span>
+          <h3>March Road Map Tittle</h3>
+          <p>1st Prize for Best Illustration Artist</p>
+        </div>
+        <div class="mapCart">
+          <span> April 2018 </span>
+          <h3>April Map Tittle</h3>
+          <p>1st Prize for Best Illustration Artist</p>
+        </div>
+      </div>
+      <hr />
+      <!-- second Cart -->
+      <div class="mapBox">
+        <!-- road Map Cart -->
+        <div class="mapCart">
+          <span> May 2018 </span>
+          <h3>March Road Map Tittle</h3>
+          <p>1st Prize for Best Illustration Artist</p>
+        </div>
+        <div class="mapCart">
+          <span> June 2018</span>
+          <h3>June Road Map Tittle</h3>
+          <p>1st Prize for Best Illustration Artist</p>
+        </div>
+        <div class="mapCart">
+          <span> July 2018 </span>
+          <h3>July Road Map Tittle</h3>
+          <p>1st Prize for Best Illustration Artist</p>
+        </div>
+        <div class="mapCart">
+          <span> August 2018 </span>
+          <h3>August Road Map Tittle </h3>
+          <p>1st Prize for Best Illustration Artist</p>
+        </div>
+      </div>
+      <hr />
+
+      <!-- third Card -->
+      <div class="mapBox">
+        <!-- road Map Cart -->
+        <div class="mapCart">
+          <span> September 2018 </span>
+          <h3>September Road Map Tittle</h3>
+          <p>1st Prize for Best Illustration Artist</p>
+        </div>
+        <div class="mapCart">
+          <span> October 2018 </span>
+          <h3>October Map Tittle</h3>
+          <p>1st Prize for Best Illustration Artist</p>
+        </div>
+        <div class="mapCart">
+          <span> November 2018 </span>
+          <h3>November Road Map Tittle</h3>
+          <p>1st Prize for Best Illustration Artist</p>
+        </div>
+        <div class="mapCart">
+          <span> December 2018 </span>
+          <h3>December Map Tittle</h3>
+          <p>1st Prize for Best Illustration Artist</p>
+        </div>
+      </div>
+      <hr />
+    </section>
+
+    <!-- team  -->
+    <section class="team" id="team">
+      <section class="teamMain1">
+        <div class="textMain1">
+          <h1>Our Senior Team Leads</h1>
+          <br />
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            nibh dolor, efficitur eget pharetra ac, cursus sed sapien. Cras
+            <br />
+            posuere ligula ut blandit varius.
+          </span>
+          <br /><br /><br /><br />
+        </div>
+        <!-- first img -->
+        <div class="teamMain1Box">
+          <!-- Image One -->
+          <div class="teamBoxImg">
+            <img src="./images/img1.jpg" alt="Image" />
+            <div class="textImg">
+              <p>Jonh Deo</p>
+            </div>
+          </div>
+          <div class="teamBoxImg">
+            <img src="./images/img2.jpg" alt="Image" />
+            <div class="textImg">
+              <p>Jonh Deo</p>
+            </div>
+          </div>
+          <div class="teamBoxImg">
+            <img src="./images/img3.jpg" alt="Image" />
+            <div class="textImg">
+              <p>Jonh Deo</p>
+            </div>
+          </div>
+          <div class="teamBoxImg">
+            <img src="./images/img4.jpg" alt="Image" />
+            <div class="textImg">
+              <p>Jonh Deo</p>
+            </div>
+          </div>
+          <div class="teamBoxImg">
+            <img src="./images/img5.jpg" alt="Image" />
+            <div class="textImg">
+              <p>Jonh Deo</p>
+            </div>
+          </div>
+          <div class="teamBoxImg">
+            <img src="./images/img6.jpg" alt="Image" />
+            <div class="textImg">
+              <p>Jonh Deo</p>
+            </div>
+          </div>
+        </div>
+        <!-- second img -->
+        <div class="teamMain1Box">
+          <!-- Image One -->
+          <div class="teamBoxImg">
+            <img src="./images/img7.jpg" alt="Image" />
+            <div class="textImg">
+              <p>Jonh Deo</p>
+            </div>
+          </div>
+          <div class="teamBoxImg">
+            <img src="./images/img5.jpg" alt="Image" />
+            <div class="textImg">
+              <p>Jonh Deo</p>
+            </div>
+          </div>
+          <div class="teamBoxImg">
+            <img src="./images/img1.jpg" alt="Image" />
+            <div class="textImg">
+              <p>Jonh Deo</p>
+            </div>
+          </div>
+          <div class="teamBoxImg">
+            <img src="./images/img2.jpg" alt="Image" />
+            <div class="textImg">
+              <p>Jonh Deo</p>
+            </div>
+          </div>
+          <div class="teamBoxImg">
+            <img src="./images/img3.jpg" alt="Image" />
+            <div class="textImg">
+              <p>Jonh Deo</p>
+            </div>
+          </div>
+          <div class="teamBoxImg">
+            <img src="./images/img4.jpg" alt="Image" />
+            <div class="textImg">
+              <p>Jonh Deo</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- second Main -->
+    </section>
+
+    <section class="teamMain1">
+      <br /><br /><br /><br />
+      <br /><br /><br /><br />
+      <h2>Frequently asked questions</h2>
+      <br />
+      <span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nibh
+        dolor, efficitur eget pharetra ac, <br />
+        cursus sed sapien. Cras posuere ligula ut blandit varius.
+      </span>
+      <br /><br /><br />
+      <!-- panel  -->
+      <div class="panelTeam">
+        <div class="panelDropDown">
+          <h5>What is ICO ?</h5>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="panelDropDown">
+          <h5>What is ICO ?</h5>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="panelTeam">
+        <div class="panelDropDown">
+          <h5>What is ICO ?</h5>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="panelDropDown">
+          <h5>What is ICO ?</h5>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="panelTeam">
+        <div class="panelDropDown">
+          <h5>What is ICO ?</h5>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="panelDropDown">
+          <h5>What is ICO ?</h5>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="panelTeam">
+        <div class="panelDropDown">
+          <h5>What is ICO ?</h5>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="panelDropDown">
+          <h5>What is ICO ?</h5>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="footerTeam">
+      <div class="containerTeam">
+        <div class="rowTeam">
+          <div class="mainContactTeam">
+            <h2>Join our community</h2>
+            <ul class="socialsTeam">
+              <li>
+                <a href="#."><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#."><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#."><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#."><i class="fab fa-telegram"></i></a>
+              </li>
+              <li>
+                <a href="#."><i class="fab fa-gitter"></i></a>
+              </li>
+              <li>
+                <a href="#."><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#."><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#."><i class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="emailTextBox">
+              <h2>Subscribe to our newsletter</h2>
+              <form>
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <main class="containerContact">
+        <h3 class="containerContactH3">Partnered with Innovative Globally</h3>
+        <br />
+        <div class="spoContact">
+          <img src="./images/1.png" alt="" />
+          <img src="./images/2.png" alt="" />
+          <img src="./images/3.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/2.png" alt="" />
+          <img src="./images/3.png" alt="" />
+          <img src="./images/1.png" alt="" />
+        </div>
+        <br /><br />
+        <div class="feedbackSubmit">
+          <div class="yourIdText">
+            <input type="name" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <input type="tel" placeholder="Your Number" />
+          </div>
+          <div class="messageText">
+            <textarea
+              name="submit"
+              placeholder="Message"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button class="btnMessage">submit</button>
+        </div>
+      </main>
+    </section>
+    <hr />
+    <footer class="footerMain">
+      <p>© 2018 ICO Crypto BlockChain. All Rights Reserved. Webicode.com</p>
+      <p>
+        <a href="#">Faqs Terms </a>
+        <a href="#">& Conditions </a>
+        <a href="#"> Contact Us </a>
+      </p>
     </footer>
-    <!-- import javascript -->
-    <script src="../frontend/index.js"></script>
   </body>
 </html>
